@@ -1,0 +1,61 @@
+檔案位置：C:\Users\a1358\git\JAVA\Brad73
+
+bytes, short, int, long --整數
+
+ctrl+D => 刪除行
+
+printf：format"格式"化輸出
+println："行"輸出
+print：無換行
+
+浮點數：不在於數值大小，在於精確度
+
+static：靜態的，不需要物件
+
+類別是用來產生物件的
+
+雙引號是物件
+
+StringBuffer：安全性較高
+StringBulider：效能較高
+
+java.lang.Deprectate：建議不使用，因為將來可能會停止使用
+
+java所有類別都有建構式
+建構式裡要先處理父類別的初始化
+
+interface => 介面、定義規格
+		  => 無物件實體
+		  => 方法：無實作
+
+抽象類別 abstract 無任何實作
+
+interface 沒有物件實作 implements
+
+collection：
+set => 1.不重複
+	   2.無順序性
+
+list => 1.可重複
+	    2.有順序性	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	    
