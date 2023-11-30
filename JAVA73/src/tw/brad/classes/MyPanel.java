@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.HashMap;
@@ -112,7 +113,10 @@ public class MyPanel extends JPanel {
 		Object obj = oin.readObject();
 
 		if (obj instanceof LinkedList) {
+			System.out.println("debug1");
 			lines = (LinkedList<LinkedList<HashMap<String, Integer>>>) obj;
+			repaint();
+			System.out.println("debug2");
 		} else {
 			throw new Exception("ERR04");
 		}
@@ -127,9 +131,10 @@ public class MyPanel extends JPanel {
 
 		try {
 			ImageIO.write(img, "jpg", new File("dir1/brad.jpg"));
-			System.out.println("ok");
-		} catch (Exception e) {
+			System.out.println("Save JPG success");
+		} catch (IOException e) {
 			System.out.println(e);
 		}
+
 	}
 }
