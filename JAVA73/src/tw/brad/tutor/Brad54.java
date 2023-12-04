@@ -12,11 +12,11 @@ public class Brad54 {
 		String mesg = "石榴姐";
 		byte[] data = mesg.getBytes();
 
-		try {
-			DatagramSocket socket = new DatagramSocket();
+		// 只能放進可以自動關閉autoclosable的類別
+		try (DatagramSocket socket = new DatagramSocket()) {
 			DatagramPacket packet = new DatagramPacket(data, data.length, InetAddress.getByName("10.0.104.130"), 8888);
 			socket.send(packet);
-			socket.close();
+			// socket.close(); 上面已自動關閉
 			System.out.println("Send OK!");
 		} catch (Exception e) {
 			System.out.println(e);

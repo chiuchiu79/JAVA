@@ -6,7 +6,7 @@ public class Brad10 {
 		int[] p = new int[7];
 
 		for (int i = 0; i < 100000; i++) {
-			int point = (int) (Math.random() * 9) + 1;// 1~6
+			int point = (int) (Math.random() * 9) + 1;// 1~6,7、8、9
 			if (point < 1 || point > 9) {
 				p[0]++;
 			} else {

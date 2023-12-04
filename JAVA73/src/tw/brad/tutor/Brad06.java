@@ -3,7 +3,7 @@ package tw.brad.tutor;
 public class Brad06 {
 
 	public static void main(String[] args) {
-		int a = 28;
+		int a = 33;
 		switch (a) { // byte, short, int, char, Striing, Enum
 		case 30:
 			System.out.println("A");
